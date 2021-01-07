@@ -1,12 +1,52 @@
 *
 {
-    /*body settings*/
+/*body settings*/
     margin: 0;
     padding: 0;
 }
+/*------------------------------------------Menus-----------------------------------*/
+/*overridding the boostrap classes*/
 .navbar
 {
+    /*trbl*/
     padding: 24px 0px;     
     border-bottom: none !important;
     transition: all 0.5s ease-in-out;
+    background-color: #34495e !important; /*important overrides boostrap class*/
 }
+
+
+.navbar ul li a{
+    /*getting all elements under navbar*/
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in; /*allows the hover to delay the change in hover*/
+    font-weight: 600; /*or use bold*/
+    font-size: 13px;
+}
+
+.navbar ul li a:hover{
+    color: deepskyblue !important;
+}
+
+.navbar-toggle{
+    border: 1px solid white !important;
+    transition: all 0.5s ease-in;
+}
+
+.navbar-toggle:hover{
+    background-color: deepskyblue !important;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color: transparent !important;
+}
+
+.location{
+    border: 1px solid white;
+    border-radius: 50px;
+    
+}
+/*--------------end of Menu------------------->
